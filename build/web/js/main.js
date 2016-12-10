@@ -44,7 +44,7 @@ app.controller("AddC", [ '$scope', '$http', function($scope, $http) {
             data :$scope.newItem 
                 
         }).then(function(response) {
-            //console.log(response.data);
+            console.log(response.data);
             $scope.msg = response.data;
             $scope.newItem="";
             
