@@ -11,7 +11,8 @@
  * Creates a shallow copy of an object, an array or a primitive.
  *
  * Assumes that there are no proto properties for objects.
- */
+ * Assumes that there are no proto properties for objects.
+*/
 function shallowCopy(src, dst) {
   if (isArray(src)) {
     dst = dst || [];
